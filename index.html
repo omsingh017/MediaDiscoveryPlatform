@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Media Discovery Platform — Discover incredible movies, series, documentaries, and more. A beautifully crafted portfolio showcasing web development projects." />
+  <title>Media Discovery Platform — Explore. Discover. Experience.</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body id="top">
+
+  <!-- =============================================
+       DARK MODE TOGGLE — Hidden Checkbox
+       ============================================= -->
+  <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle dark mode" />
+
+  <!-- =============================================
+       STICKY NAVBAR
+       ============================================= -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="#top" class="nav-logo" id="nav-logo">MediaDiscover</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" id="nav-home">Home</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+        <li>
+          <!-- Dark Mode Toggle Switch -->
+          <label for="dark-mode-toggle" class="theme-toggle-label" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="toggle-track"></span>
+            <span class="toggle-thumb"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+       ============================================= -->
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+         ============================================= -->
+    <section class="hero" id="hero" aria-label="Hero introduction">
+      <div class="hero-content">
+        <p class="hero-greeting">✦ Welcome to the future of media</p>
+        <h1 class="hero-name">Media Discovery Platform</h1>
+        <p class="hero-subtitle">Explore. Discover. Experience.</p>
+        <p class="hero-description">
+          A curated collection of cinematic masterpieces, gripping series, and awe-inspiring 
+          documentaries — all beautifully presented in a modern, immersive interface built 
+          with pure HTML &amp; CSS.
+        </p>
+        <a href="#projects" class="hero-cta" id="hero-cta">
+          Browse Collection ↓
+        </a>
+      </div>
+
+      <div class="scroll-indicator">
+        <a href="#projects" aria-label="Scroll to projects">
+          <span>Scroll</span>
+          <span class="arrow"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PROJECTS GALLERY
+         ============================================= -->
+    <section class="section section-alt" id="projects" aria-label="Projects gallery">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Curated Collection</p>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">
+            A handpicked gallery of cinematic experiences across genres — from deep-space 
+            odysseys to noir mysteries.
+          </p>
+        </header>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Card 1 — Featured -->
+          <article class="project-card featured" id="project-1">
+            <div class="project-card-image">
+              <img src="images/stellar_odyssey.png" 
+                   alt="Stellar Odyssey — A breathtaking sci-fi epic set in deep space" 
+                   loading="lazy" />
+              <span class="project-badge badge-scifi">Sci-Fi</span>
+              <span class="project-rating"><span class="star">★</span> 9.2</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Stellar Odyssey</h3>
+              <p class="project-card-description">
+                An epic journey through the cosmos following Captain Elara Voss as she navigates 
+                uncharted nebulae to find humanity's new home among the stars.
+              </p>
+              <div class="project-card-meta">
+                <div class="project-card-tags">
+                  <span class="tag">Space</span>
+                  <span class="tag">Adventure</span>
+                  <span class="tag">Epic</span>
+                </div>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" id="project-2">
+            <div class="project-card-image">
+              <img src="images/last_kingdom.png" 
+                   alt="The Last Kingdom — A sweeping historical drama of medieval conflict" 
+                   loading="lazy" />
+              <span class="project-badge badge-drama">Drama</span>
+              <span class="project-rating"><span class="star">★</span> 8.7</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">The Last Kingdom</h3>
+              <p class="project-card-description">
+                A sweeping tale of honor, betrayal, and the unbreakable will of a warrior fighting 
+                to reclaim his birthright in a medieval world torn by war.
+              </p>
+              <div class="project-card-meta">
+                <div class="project-card-tags">
+                  <span class="tag">Historical</span>
+                  <span class="tag">War</span>
+                </div>
+                <span class="project-card-year">2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" id="project-3">
+            <div class="project-card-image">
+              <img src="images/ocean_depths.png" 
+                   alt="Ocean Depths — A stunning underwater nature documentary" 
+                   loading="lazy" />
+              <span class="project-badge badge-documentary">Documentary</span>
+              <span class="project-rating"><span class="star">★</span> 9.0</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Ocean Depths</h3>
+              <p class="project-card-description">
+                Dive into the abyss where bioluminescent creatures illuminate the darkest corners 
+                of our planet's most mysterious frontier — the deep ocean.
+              </p>
+              <div class="project-card-meta">
+                <div class="project-card-tags">
+                  <span class="tag">Nature</span>
+                  <span class="tag">Marine</span>
+                </div>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card" id="project-4">
+            <div class="project-card-image">
+              <img src="images/neon_nights.png" 
+                   alt="Neon Nights — A cyberpunk thriller in a rain-soaked future city" 
+                   loading="lazy" />
+              <span class="project-badge badge-thriller">Thriller</span>
+              <span class="project-rating"><span class="star">★</span> 8.5</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Neon Nights</h3>
+              <p class="project-card-description">
+                In a rain-soaked megacity where neon never sleeps, a rogue detective uncovers a 
+                conspiracy that reaches into the highest levels of the corporate underworld.
+              </p>
+              <div class="project-card-meta">
+                <div class="project-card-tags">
+                  <span class="tag">Cyberpunk</span>
+                  <span class="tag">Noir</span>
+                </div>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="project-card" id="project-5">
+            <div class="project-card-image">
+              <img src="images/whispers_wind.png" 
+                   alt="Whispers in the Wind — An enchanting animated fantasy world" 
+                   loading="lazy" />
+              <span class="project-badge badge-fantasy">Fantasy</span>
+              <span class="project-rating"><span class="star">★</span> 9.4</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Whispers in the Wind</h3>
+              <p class="project-card-description">
+                On floating islands above the clouds, a young herbalist discovers she can speak 
+                to the ancient spirits of the wind — and they have a warning.
+              </p>
+              <div class="project-card-meta">
+                <div class="project-card-tags">
+                  <span class="tag">Animated</span>
+                  <span class="tag">Magic</span>
+                </div>
+                <span class="project-card-year">2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="project-card" id="project-6">
+            <div class="project-card-image">
+              <img src="images/shadow_protocol.png" 
+                   alt="Shadow Protocol — A noir mystery shrouded in darkness and intrigue" 
+                   loading="lazy" />
+              <span class="project-badge badge-mystery">Mystery</span>
+              <span class="project-rating"><span class="star">★</span> 8.9</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Shadow Protocol</h3>
+              <p class="project-card-description">
+                When classified files resurface from a cold-war era experiment, a retired agent 
+                must confront ghosts from a past operation that was never meant to exist.
+              </p>
+              <div class="project-card-meta">
+                <div class="project-card-tags">
+                  <span class="tag">Noir</span>
+                  <span class="tag">Espionage</span>
+                </div>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CONTACT FORM
+         ============================================= -->
+    <section class="section" id="contact" aria-label="Contact form">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Say Hello</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Have a project in mind or just want to chat about the latest releases? 
+            Drop a message below.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+
+          <!-- Contact Info -->
+          <div class="contact-info" id="contact-info">
+            <h3 class="contact-info-title">
+              Let's create something<br />extraordinary together.
+            </h3>
+            <p class="contact-info-text">
+              Whether you're looking for a collaborator, have feedback on a project, 
+              or simply want to discuss the art of cinema — I'd love to hear from you. 
+              Expect a response within 24 hours.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <span class="contact-detail-icon" aria-hidden="true">📧</span>
+                <div>
+                  <p class="contact-detail-label">Email</p>
+                  <p class="contact-detail-value">hello@mediadiscover.io</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <span class="contact-detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <p class="contact-detail-label">Location</p>
+                  <p class="contact-detail-value">San Francisco, CA</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <span class="contact-detail-icon" aria-hidden="true">🕐</span>
+                <div>
+                  <p class="contact-detail-label">Availability</p>
+                  <p class="contact-detail-value">Mon – Fri, 9 AM – 6 PM PST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <form class="contact-form" id="contact-form" action="#" method="post" aria-label="Contact form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="form-input" 
+                placeholder="Enter your full name" 
+                required 
+                autocomplete="name" 
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                placeholder="Enter your email address" 
+                required 
+                autocomplete="email" 
+              />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                placeholder="Tell me about your project or what's on your mind..." 
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submit-btn">
+              Send Message →
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" id="footer" aria-label="Site footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <p class="footer-brand-name">MediaDiscover</p>
+          <p class="footer-brand-text">
+            A curated platform for discovering and showcasing the world's most 
+            compelling visual stories. Built with passion, powered by pure CSS.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <p class="footer-col-title">Navigate</p>
+          <a href="#hero">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+          <p class="footer-col-title">Resources</p>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+          <p class="footer-col-title">Legal</p>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2025 MediaDiscover. All rights reserved. Crafted with ♥ using pure HTML &amp; CSS.
+        </p>
+
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" id="social-github">GH</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" id="social-linkedin">IN</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile" id="social-twitter">X</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble profile" id="social-dribbble">DR</a>
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span class="arrow-up"></span>
+          Back to Top
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
